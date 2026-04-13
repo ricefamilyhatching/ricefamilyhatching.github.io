@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rice Family Hatching</title>
+
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAANUSn84PPgxlDYbvmmT9MIHJjCBxm4OFuGV0SPBcuCuyRNEhQat_x0p5QcU8hw37ZG2zsxxIdfdDg-PU&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+button {
+  background: #0070ba;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Rice Family Hatching</h1>
+  <p>Farm Fresh Hatching Eggs</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>6 Bielefelder Hatching Eggs</h3>
+    <div class="price">$45.99</div>
+    <p>Fresh eggs, carefully packed and shipped.</p>
+
+    <div id="paypal-container-6CVHJQW9TKANN"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "6CVHJQW9TKANN",
+      }).render("#paypal-container-6CVHJQW9TKANN")
+    </script>
+  </div>
+
+  <div class="card">
+    <h3>6 Cream Legbar Hatching Eggs</h3>
+    <div class="price">$49.99</div>
+    <p>Blue egg layers. Limited availability.</p>
+    <p><b>Coming soon</b></p>
+  </div>
+
+  <div class="card">
+    <h3>Bundle: 6 Legbar + 6 Bielefelder</h3>
+    <div class="price">$84.99</div>
+    <p>Perfect mixed starter bundle.</p>
+    <p><b>Coming soon</b></p>
+  </div>
+
+</div>
+
+</body>
+</html>
